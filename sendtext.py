@@ -18,9 +18,6 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
 class SendText:
-        #email = "bahas.game@gmail.com"
-        #pas = "bahas902549gm"
-        #sms_gateway = '6149465257@vtext.com'
 
         def __init__(self, **kwargs):
             self.email = kwargs.get('email', None)

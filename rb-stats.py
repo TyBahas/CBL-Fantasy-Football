@@ -36,6 +36,11 @@ insults = ['Why did you even start this guy?',
 "He just pooed his jorts"
 ]
 
+def vault_get_email_pass(keyword):
+    pw_file_path = os.path.abspath("./vault.json")
+    json_data = json.load(open(pw_file_path))
+    return json_data['email'][keyword]
+
 def cb(active, completed, diffs):
     for game in active:
         # Remember, it is possible for an active game to have not started yet.
@@ -66,8 +71,8 @@ def cb(active, completed, diffs):
                                 text_subject = enemy_team['fantasy_team'][x]['player'] + ' fumble!!!!'
                                 text_content = insults[random.randint(0,len(insults)-1)]
                                 enemy_team['fantasy_team'][x]['fum'] += 1
-                                sms = SendText(email='cfbtrashtalk@gmail.com',
-                                    pas='columbusbeerleague',
+                                sms = SendText(email=vault_get_email_pass('username'),
+                                    pas=vault_get_email_pass('password'),
                                     #smsgateway='6149465257@vtext.com',
                                     smsgateway=enemy_team['phone'],
                                     text_subject=text_subject,
@@ -80,8 +85,8 @@ def cb(active, completed, diffs):
                                 text_subject =  enemy_team['fantasy_team'][x]['player'] + ' interception!!!!'
                                 text_content = insults[random.randint(0,len(insults)-1)]
                                 enemy_team['fantasy_team'][x]['int'] += 1
-                                sms = SendText(email='cfbtrashtalk@gmail.com',
-                                    pas='columbusbeerleague',
+                                sms = SendText(email=vault_get_email_pass('username'),
+                                    pas=vault_get_email_pass('password'),
                                     #smsgateway='6149465257@vtext.com',
                                     smsgateway=enemy_team['phone'],
                                     text_subject=text_subject,
@@ -94,8 +99,8 @@ def cb(active, completed, diffs):
                                 text_subject = enemy_team['fantasy_team'][x]['player'] + ' missed the kick!!!!'
                                 text_content = insults[random.randint(0,len(insults)-1)]
                                 enemy_team['fantasy_team'][x]['kick'] += 1
-                                sms = SendText(email='cfbtrashtalk@gmail.com',
-                                    pas='columbusbeerleague',
+                                sms = SendText(email=vault_get_email_pass('username')    ,
+                                    pas=vault_get_email_pass('password'),
                                     #smsgateway='6149465257@vtext.com',
                                     smsgateway=enemy_team['phone'],
                                     text_subject=text_subject,
@@ -108,8 +113,8 @@ def cb(active, completed, diffs):
                                 text_subject = enemy_team['fantasy_team'][x]['player'] + ' missed the XP kick!!!!'
                                 text_content = insults[random.randint(0,len(insults)-1)]
                                 enemy_team['fantasy_team'][x]['xp_miss'] += 1
-                                sms = SendText(email='cfbtrashtalk@gmail.com',
-                                    pas='columbusbeerleague',
+                                sms = SendText(email=vault_get_email_pass('username')    ,
+                                    pas=vault_get_email_pass('password'),
                                     #smsgateway='6149465257@vtext.com',
                                     smsgateway=enemy_team['phone'],
                                     text_subject=text_subject,
