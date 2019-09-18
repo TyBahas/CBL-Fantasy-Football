@@ -6,16 +6,6 @@ import random
 import io
 from sendtext import SendText
 
-'''
-game = nflgame.games(2019, week=2)
-players = nflgame.combine_game_stats(game)
-
-for x in enemy_team:
-    for p in players:
-        if str(p) == enemy_team[x]['player'] and str(p.team) == enemy_team[x]['team']:
-            print p, p.team, p.fumbles_lost, p.kicking_fg_missed, p.passing_int
-'''
-
 
 insults = ['Why did you even start this guy?', 
 'This guy is a good argument for late-term abortion', 
@@ -50,6 +40,28 @@ def vault_get_email_pass(keyword):
     return json_data['email'][keyword]
 
 
+def sms_generation(player, turnover_type, phone_num, coach):
+    if turnover_type == 'fum':
+        string = 'fumble'
+    elif turnover_type == 'int':
+        string = 'interception'
+    elif turnover_type == 'fg':
+        string = 'missed FG'
+    elif turnover_type == 'xp':
+        string = 'missed XP'
+
+    text_subject = player + ' ' + string + ' !!!!'
+    text_content = insults[random.randint(0,len(insults)-1)]
+    sms = SendText(
+        email=vault_get_email_pass('username'),
+        pas=vault_get_email_pass('password'),
+        smsgateway=phone_num,
+        text_subject=text_subject,
+        text_content=text_content
+        )
+    sms.send()
+    print text_subject + ": sent text to " + coach + " - " + text_content
+
 
 
 def cb(active, completed, diffs):
@@ -79,58 +91,27 @@ def cb(active, completed, diffs):
                             
                             if int(p.fumbles_lost) > int(enemy_team['fantasy_team'][x]['fum']):
                                 # if new fumble
-                                text_subject = enemy_team['fantasy_team'][x]['player'] + ' fumble!!!!'
-                                text_content = insults[random.randint(0,len(insults)-1)]
+                                sms_generation(player=enemy_team['fantasy_team'][x]['player'], turnover_type='fum', phone_num=enemy_team['phone'], coach=enemy_team['name'])
                                 enemy_team['fantasy_team'][x]['fum'] += 1
-                                sms = SendText(email=vault_get_email_pass('username'),
-                                    pas=vault_get_email_pass('password'),
-                                    smsgateway=enemy_team['phone'],
-                                    text_subject=text_subject,
-                                    text_content=text_content)
-                                sms.send()
-                                print text_subject + ": sent text to " + enemy_team['name'] + " - " + text_content
 
                             elif int(p.passing_ints) >  int(enemy_team['fantasy_team'][x]['int']):
                                 # if new interception
-                                text_subject =  enemy_team['fantasy_team'][x]['player'] + ' interception!!!!'
-                                text_content = insults[random.randint(0,len(insults)-1)]
+                                sms_generation(player=enemy_team['fantasy_team'][x]['player'], turnover_type='int', phone_num=enemy_team['phone'], coach=enemy_team['name'])
                                 enemy_team['fantasy_team'][x]['int'] += 1
-                                sms = SendText(email=vault_get_email_pass('username'),
-                                    pas=vault_get_email_pass('password'),
-                                    smsgateway=enemy_team['phone'],
-                                    text_subject=text_subject,
-                                    text_content=text_content)
-                                sms.send()
-                                print text_subject + ": sent text to " + enemy_team['name'] + " - " + text_content
 
                             elif int(p.kicking_fgmissed) >  int(enemy_team['fantasy_team'][x]['kick']):
                                 # if new missed kick
-                                text_subject = enemy_team['fantasy_team'][x]['player'] + ' missed the kick!!!!'
-                                text_content = insults[random.randint(0,len(insults)-1)]
+                                sms_generation(player=enemy_team['fantasy_team'][x]['player'], turnover_type='fg', phone_num=enemy_team['phone'], coach=enemy_team['name'])
                                 enemy_team['fantasy_team'][x]['kick'] += 1
-                                sms = SendText(email=vault_get_email_pass('username'),
-                                    pas=vault_get_email_pass('password'),
-                                    smsgateway=enemy_team['phone'],
-                                    text_subject=text_subject,
-                                    text_content=text_content)
-                                sms.send()
-                                print text_subject + ": sent text to " + enemy_team['name'] + " - " + text_content
 
                             elif int(p.kicking_xpmissed) >  int(enemy_team['fantasy_team'][x]['xp_miss']):
                                 # if new extra point kick
-                                text_subject = enemy_team['fantasy_team'][x]['player'] + ' missed the XP kick!!!!'
-                                text_content = insults[random.randint(0,len(insults)-1)]
+                                sms_generation(player=enemy_team['fantasy_team'][x]['player'], turnover_type='xp', phone_num=enemy_team['phone'], coach=enemy_team['name'])
                                 enemy_team['fantasy_team'][x]['xp_miss'] += 1
-                                sms = SendText(email=vault_get_email_pass('username')    ,
-                                    pas=vault_get_email_pass('password'),
-                                    smsgateway=enemy_team['phone'],
-                                    text_subject=text_subject,
-                                    text_content=text_content)
-                                sms.send()
-                                print text_subject + ": sent text to " + enemy_team['name'] + " - " + text_content
 
                             else:
                                 pass
+
             data = enemy_team
             json_file.close()  #closes the original file
             with io.open(jsonfilename, 'w', encoding='utf-8') as outfile:
