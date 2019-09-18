@@ -37,9 +37,20 @@ insults = ['Why did you even start this guy?',
 ]
 
 def vault_get_email_pass(keyword):
+    """[Gets the username and password from vault.json file to send SMS]
+    
+    Arguments:
+        keyword {[string]} -- [the key that corresponds to the value (username/password) that you want to retrieve]
+    
+    Returns:
+        [string] -- [username/password value in json file]
+    """
     pw_file_path = os.path.abspath("./vault.json")
     json_data = json.load(open(pw_file_path))
     return json_data['email'][keyword]
+
+
+
 
 def cb(active, completed, diffs):
     for game in active:
@@ -73,13 +84,12 @@ def cb(active, completed, diffs):
                                 enemy_team['fantasy_team'][x]['fum'] += 1
                                 sms = SendText(email=vault_get_email_pass('username'),
                                     pas=vault_get_email_pass('password'),
-                                    #smsgateway='6149465257@vtext.com',
                                     smsgateway=enemy_team['phone'],
                                     text_subject=text_subject,
                                     text_content=text_content)
                                 sms.send()
                                 print text_subject + ": sent text to " + enemy_team['name'] + " - " + text_content
-                            
+
                             elif int(p.passing_ints) >  int(enemy_team['fantasy_team'][x]['int']):
                                 # if new interception
                                 text_subject =  enemy_team['fantasy_team'][x]['player'] + ' interception!!!!'
@@ -87,7 +97,6 @@ def cb(active, completed, diffs):
                                 enemy_team['fantasy_team'][x]['int'] += 1
                                 sms = SendText(email=vault_get_email_pass('username'),
                                     pas=vault_get_email_pass('password'),
-                                    #smsgateway='6149465257@vtext.com',
                                     smsgateway=enemy_team['phone'],
                                     text_subject=text_subject,
                                     text_content=text_content)
@@ -99,9 +108,8 @@ def cb(active, completed, diffs):
                                 text_subject = enemy_team['fantasy_team'][x]['player'] + ' missed the kick!!!!'
                                 text_content = insults[random.randint(0,len(insults)-1)]
                                 enemy_team['fantasy_team'][x]['kick'] += 1
-                                sms = SendText(email=vault_get_email_pass('username')    ,
+                                sms = SendText(email=vault_get_email_pass('username'),
                                     pas=vault_get_email_pass('password'),
-                                    #smsgateway='6149465257@vtext.com',
                                     smsgateway=enemy_team['phone'],
                                     text_subject=text_subject,
                                     text_content=text_content)
@@ -115,7 +123,6 @@ def cb(active, completed, diffs):
                                 enemy_team['fantasy_team'][x]['xp_miss'] += 1
                                 sms = SendText(email=vault_get_email_pass('username')    ,
                                     pas=vault_get_email_pass('password'),
-                                    #smsgateway='6149465257@vtext.com',
                                     smsgateway=enemy_team['phone'],
                                     text_subject=text_subject,
                                     text_content=text_content)
