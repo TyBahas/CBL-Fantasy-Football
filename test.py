@@ -1,5 +1,5 @@
 import nflgame
-from sendtest import SendText
+from sendtext import SendText
 
 #SentText test 
 #sms = SendText(email='cfbtrashtalk@gmail.com',pas='columbusbeerleague',smsgateway='6145827473@vtext.com',text_subject='hello',text_content='But you already knew that \n \n \n' )
