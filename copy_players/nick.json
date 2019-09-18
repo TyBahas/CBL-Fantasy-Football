@@ -1,0 +1,69 @@
+{"name":"nick",
+"phone":"6145658589@vtext.com",
+"fantasy_team": {
+    "qb": {
+        "team": "KC",
+        "player":"P.Mahomes",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        },
+    "rb1": {
+        "team": "NYJ",
+        "player":"L.Bell",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        },
+    "rb2": {
+        "team": "HOU",
+        "player":"C.Hyde",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        },
+    "wr1": {
+        "team": "OAK",
+        "player":"T.Williams",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        },
+    "wr2": {
+        "team": "ATL",
+        "player":"C.Ridley",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        },
+    "te": {
+        "team": "DET",
+        "player":"T.Hockenson",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        },
+    "flex": {
+        "team": "NE",
+        "player":"A.Brown",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        },
+    "kicker": {
+        "team": "BAL",
+        "player":"J.Tucker",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        }
+    }
+}

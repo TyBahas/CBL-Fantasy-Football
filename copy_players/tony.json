@@ -1,0 +1,69 @@
+{"name":"tony",
+"phone":"6142649891@txt.att.net",
+"fantasy_team": {
+    "qb": {
+        "team": "PHI",
+        "player":"C.Wentz",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        },
+    "rb1": {
+        "team": "MIN",
+        "player":"D.Cook",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        },
+    "rb2": {
+        "team": "CLE",
+        "player":"N.Chubb",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        },
+    "wr1": {
+        "team": "LA",
+        "player":"B.Cooks",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        },
+    "wr2": {
+        "team": "DAL",
+        "player":"A.Cooper",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        },
+    "te": {
+        "team": "WAS",
+        "player":"V.Davis",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        },
+    "flex": {
+        "team": "TB",
+        "player":"C.Godwin",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        },
+    "kicker": {
+        "team": "NE",
+        "player":"S.Gostkowski",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        }
+    }
+}

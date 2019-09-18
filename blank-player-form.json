@@ -1,0 +1,69 @@
+{"name":"",
+"phone":"@vtext.com",
+"fantasy_team": {
+    "qb": {
+        "team": "",
+        "player":"",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        },
+    "rb1": {
+        "team": "",
+        "player":"",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        },
+    "rb2": {
+        "team": "",
+        "player":"",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        },
+    "wr1": {
+        "team": "",
+        "player":"",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        },
+    "wr2": {
+        "team": "",
+        "player":"",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        },
+    "te": {
+        "team": "",
+        "player":"",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        },
+    "flex": {
+        "team": "",
+        "player":"",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        },
+    "kicker": {
+        "team": "",
+        "player":"",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        }
+    }
+}

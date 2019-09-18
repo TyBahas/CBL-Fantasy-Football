@@ -1,0 +1,69 @@
+{"name":"kristen",
+"phone":"6148862628@txt.att.net",
+"fantasy_team": {
+    "qb": {
+        "team": "ATL",
+        "player":"M.Ryan",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        },
+    "rb1": {
+        "team": "WAS",
+        "player":"A.Peterson",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        },
+    "rb2": {
+        "team": "CIN",
+        "player":"J.Mixon",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        },
+    "wr1": {
+        "team": "NE",
+        "player":"J.Edelman",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        },
+    "wr2": {
+        "team": "PIT",
+        "player":"J.Smith-Schuster",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        },
+    "te": {
+        "team": "TEN",
+        "player":"D.Walker",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        },
+    "flex": {
+        "team": "ATL",
+        "player":"D.Freeman",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        },
+    "kicker": {
+        "team": "NO",
+        "player":"W.Lutz",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        }
+    }
+}

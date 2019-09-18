@@ -1,0 +1,69 @@
+{"name":"brian",
+"phone":"6142020022@vtext.com",
+"fantasy_team": {
+    "qb": {
+        "team": "HOU",
+        "player":"D.Watson",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        },
+    "rb1": {
+        "team": "BAL",
+        "player":"M.Ingram",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        },
+    "rb2": {
+        "team": "IND",
+        "player":"M.Mack",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        },
+    "wr1": {
+        "team": "ATL",
+        "player":"J.Jones",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        },
+    "wr2": {
+        "team": "BUF",
+        "player":"J.Brown",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        },
+    "te": {
+        "team": "NO",
+        "player":"J.Cook",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        },
+    "flex": {
+        "team": "LA",
+        "player":"T.Gurley",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        },
+    "kicker": {
+        "team": "PHI",
+        "player":"J.Elliot",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        }
+    }
+}

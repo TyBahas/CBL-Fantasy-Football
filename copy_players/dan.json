@@ -1,0 +1,69 @@
+{"name":"dan",
+"phone":"6143651318@tmomail.net",
+"fantasy_team": {
+    "qb": {
+        "team": "BAL",
+        "player":"L.Jackson",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        },
+    "rb1": {
+        "team": "GB",
+        "player":"A.Jones",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        },
+    "rb2": {
+        "team": "NYG",
+        "player":"S.Barkley",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        },
+    "wr1": {
+        "team": "LAC",
+        "player":"K.Allen",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        },
+    "wr2": {
+        "team": "SEA",
+        "player":"T.Lockett",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        },
+    "te": {
+        "team": "TB",
+        "player":"O.Howard",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        },
+    "flex": {
+        "team": "CIN",
+        "player":"T.Boyd",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        },
+    "kicker": {
+        "team": "LA",
+        "player":"G.Zuerlein",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        }
+    }
+}

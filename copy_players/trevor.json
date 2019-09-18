@@ -1,0 +1,69 @@
+{"name":"trevor",
+"phone":"6145458444@vtext.com",
+"fantasy_team": {
+    "qb": {
+        "team": "CLE",
+        "player":"B.Mayfield",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        },
+    "rb1": {
+        "team": "JAX",
+        "player":"L.Fournette",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        },
+    "rb2": {
+        "team": "CAR",
+        "player":"C.McCaffrey",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        },
+    "wr1": {
+        "team": "MIN",
+        "player":"A.Thielen",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        },
+    "wr2": {
+        "team": "KC",
+        "player":"S.Watkins",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        },
+    "te": {
+        "team": "CLE",
+        "player":"D.Njoku",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        },
+    "flex": {
+        "team": "NE",
+        "player":"R.Burkhead",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        },
+    "kicker": {
+        "team": "KC",
+        "player":"H.Butker",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        }
+    }
+}

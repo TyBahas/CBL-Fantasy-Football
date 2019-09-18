@@ -1,0 +1,3 @@
+copy_players/*.json
+players/*.json
+test.py

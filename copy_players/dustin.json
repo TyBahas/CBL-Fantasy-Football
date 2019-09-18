@@ -1,0 +1,69 @@
+{"name":"dustin",
+"phone":"6149758136@vtext.com",
+"fantasy_team": {
+    "qb": {
+        "team": "CAR",
+        "player":"C.Newton",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        },
+    "rb1": {
+        "team": "BUF",
+        "player":"F.Gore",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        },
+    "rb2": {
+        "team": "OAK",
+        "player":"J.Jacobs",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        },
+    "wr1": {
+        "team": "GB",
+        "player":"D.Adams",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        },
+    "wr2": {
+        "team": "CLE",
+        "player":"O.Beckham",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        },
+    "te": {
+        "team": "PHI",
+        "player":"Z.Ertz",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        },
+    "flex": {
+        "team": "LA",
+        "player":"C.Kupp",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        },
+    "kicker": {
+        "team": "HOU",
+        "player":"K.Fairbairn",
+        "fum":0,
+        "int":0,
+        "kick": 0,
+        "xp_miss": 0
+        }
+    }
+}
